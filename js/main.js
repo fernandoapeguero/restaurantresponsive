@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   fetchCuisines();
 });
 
+
+
 /**
  * Fetch all neighborhoods and set their HTML.
  */
