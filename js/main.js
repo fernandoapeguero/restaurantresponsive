@@ -168,15 +168,14 @@ createRestaurantHTML = (restaurant) => {
 }
 
 //service worker resgistrator
-if('serviceWorker' in navigator){
-
+if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js')
-  .then(function(resgistration){
-    console.log('service worker registered');
+    .then(function (resgistration) {
+      console.log('service worker registered');
 
-  }).catch(function(err){
-    console.log('did not work ' , err);
-  });
+    }).catch(function (err) {
+      console.log('did not work ', err);
+    });
 }
 
 /**

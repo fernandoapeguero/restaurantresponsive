@@ -1,6 +1,5 @@
 var staticCacheName = 'res-v1';
 
-
 self.addEventListener('install', function (event) {
     var cacheFiles = [
         '/',
@@ -27,7 +26,6 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
 
         caches.open(staticCacheName).then(function (cache) {
-
             return cache.addAll(cacheFiles);
         }).catch(function (err) {
             console.log('error ', err);
@@ -47,8 +45,6 @@ self.addEventListener('fetch', function (event) {
 
 });
 
-
-
 self.addEventListener('activate', function (event) {
 
     event.waitUntil(
@@ -63,5 +59,4 @@ self.addEventListener('activate', function (event) {
             )
         })
     );
-
 });
