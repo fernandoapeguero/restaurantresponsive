@@ -159,6 +159,7 @@ nav h1 a {
 }
 
 .filter-options h2 {
+  padding-top: 20px;
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -186,20 +187,20 @@ nav h1 a {
   list-style: outside none none;
   margin: 0;
   padding: 30px 0px 60px;
-  text-align: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #restaurants-list li {
+  display: block;
+  flex: auto;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
   margin: 15px;
   min-height: 380px;
   width: 270px;
-  ;
   padding: 0 30px 25px;
   text-align: left;
   height: 100%;
@@ -406,12 +407,6 @@ nav h1 a {
     text-align: center;
     width: 100%;
     margin: auto;
-  }
-}
-
-@media only screen and (max-width: 1050px) and (min-width: 768px) {
-  #restaurants-list li {
-    width: 245px;
   }
 }
 
